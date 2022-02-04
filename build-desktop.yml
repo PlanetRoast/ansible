@@ -1,0 +1,6 @@
+---
+- name: Build Desktop Machine
+  hosts: localhost
+  roles:
+    - dotfiles
+    - cinnamon
