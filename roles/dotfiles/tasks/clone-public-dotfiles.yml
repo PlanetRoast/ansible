@@ -1,0 +1,5 @@
+---
+- name: Clone public dotfiles repo
+  ansible.builtin.git:
+    repo: https://github.com/PlanetRoast/dotfiles
+    dest: ~/.dotfiles

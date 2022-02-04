@@ -1,0 +1,11 @@
+---
+- name: Check if private bashrc exists
+  ansible.builtin.stat:
+    path: ~/gs-docs/script/dotfiles/.bashrc
+  register: file
+
+- name: Source private bashrc
+  when: file.stat.exists
+  ansible.builtin.lineinfile:
+    path: ~/.bashrc
+    line: "source ~/gs-docs/script/dotfiles/.bashrc # PlanetRoast Private bashrc"

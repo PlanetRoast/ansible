@@ -1,0 +1,7 @@
+- import_tasks: clone-public-dotfiles.yml
+- import_tasks: source-public-bashrc.yml
+- import_tasks: source-public-aliases.yml
+- import_tasks: source-public-profile.yml
+- import_tasks: source-private-bashrc.yml
+- import_tasks: source-private-aliases.yml
+- import_tasks: create-symlinks.yml

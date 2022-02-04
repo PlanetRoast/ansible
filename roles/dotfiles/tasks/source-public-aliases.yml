@@ -1,0 +1,4 @@
+- name: Source public .bash_aliases
+  ansible.builtin.lineinfile:
+    path: ~/.bashrc
+    line: "source ~/.dotfiles/.bash_aliases # PlanetRoast Public bash_aliases"

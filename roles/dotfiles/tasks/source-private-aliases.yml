@@ -1,0 +1,11 @@
+---
+- name: Check if private bash_aliases exists
+  ansible.builtin.stat:
+    path: ~/gs-docs/script/dotfiles/.bash_aliases
+  register: file
+
+- name: Source private aliases
+  when: file.stat.exists
+  ansible.builtin.lineinfile:
+    path: ~/.bashrc
+    line: "source ~/gs-docs/script/dotfiles/.bash_aliases # PlanetRoast Private Aliases"

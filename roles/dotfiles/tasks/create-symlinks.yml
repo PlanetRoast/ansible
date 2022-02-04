@@ -1,0 +1,10 @@
+---
+- name: Create symlinks
+  ansible.builtin.file:
+    src: "~/.dotfiles/{{ item }}"
+    dest: "~/{{ item }}"
+    state: link
+  with_items:
+    - .tmux.conf
+    - .vimrc
+    - .config/ncmpcpp

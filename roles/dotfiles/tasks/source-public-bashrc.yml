@@ -1,0 +1,5 @@
+---
+- name: Source public .bashrc
+  ansible.builtin.lineinfile:
+    path: ~/.bashrc
+    line: "source ~/.dotfiles/.bashrc # PlanetRoast Public bashrc"

@@ -1,0 +1,4 @@
+- name: Source public .profile
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "source ~/.dotfiles/.profile # PlanetRoast Public profile"
