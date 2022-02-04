@@ -1,0 +1,16 @@
+---
+- name: Sound effects
+  ansible.builtin.command: "gsettings set org.cinnamon.sounds {{ item }}"
+  with_items:
+    - login-enabled false # Starting Cinnamon
+    - logout-enabled false # Leaving Cinnamon       
+    - switch-enabled false # Switching workspace
+    - map-enabled false # Opening new windows
+    - close-enabled false # Closing windows
+    - minimize-enabled false # Minimizing windows
+    - maximize-enabled false # Maximize windows
+    - unmaximize-enabled false # Unmaximize windows
+    - tile-enabled false # Tiling and snapping windows
+    - plug-enabled false # Inserting a device
+    - unplug-enabled false # Removing a device
+    - notification-enabled false # Showing notifications
