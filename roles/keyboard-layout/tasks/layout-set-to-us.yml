@@ -1,0 +1,5 @@
+---
+- name: Layout set to US
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: setxkbmap -layout us

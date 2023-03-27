@@ -1,2 +1,3 @@
 - import_tasks: sound-effects.yml
 - import_tasks: keybindings.yml
+- import_tasks: theme.yml

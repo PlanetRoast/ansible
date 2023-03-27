@@ -1,0 +1,5 @@
+---
+- name: Clear previously set options
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "setxkbmap -option # Clear any previously set options"

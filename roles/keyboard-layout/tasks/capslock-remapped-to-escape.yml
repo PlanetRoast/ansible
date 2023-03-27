@@ -1,0 +1,5 @@
+---
+- name: CapsLock remapped to Escape
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "setxkbmap -option caps:escape # Capslock remapped to Escape"

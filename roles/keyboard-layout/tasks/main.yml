@@ -1,0 +1,7 @@
+- import_tasks: layout-set-to-us.yml
+- import_tasks: variant-set-to-dvorak.yml
+- import_tasks: clear-previously-set-options.yml
+- import_tasks: right-alt-remapped-to-right-ctrl.yml
+- import_tasks: left-alt-remapped-to-left-ctrl.yml
+- import_tasks: capslock-remapped-to-escape.yml
+- import_tasks: printscr-remapped-to-right-super.yml

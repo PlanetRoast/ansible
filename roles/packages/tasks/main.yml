@@ -1,0 +1,12 @@
+---
+- name: Install common packpages
+  become: yes
+  apt:
+    name: vim
+    update_cache: yes
+  apt:
+    name: git
+    update_cache: yes
+  apt:
+    name: tmux
+    update_cache: yes

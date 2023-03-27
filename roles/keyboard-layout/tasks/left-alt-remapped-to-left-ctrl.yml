@@ -1,0 +1,6 @@
+---
+- name: Left ALT remapped to left CTRL
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "setxkbmap -option ctrl:swap_lalt_lctl # Left ALT remapped to left CTRL"
+

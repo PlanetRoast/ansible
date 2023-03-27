@@ -1,0 +1,13 @@
+---
+- name: Theme
+  ansible.builtin.command: "gsettings set org.cinnamon.desktop.wm.preferences theme {{ item }}"
+  with_items:
+    - 'Mint-Y'
+- name: Icon theme
+  ansible.builtin.command: "gsettings set org.cinnamon.desktop.interface icon-theme {{ item }}"
+  with_items:
+    - 'Mint-Y-Dark-Teal'
+- name: GTK theme
+  ansible.builtin.command: "gsettings set org.cinnamon.desktop.interface gtk-theme {{ item }}"
+  with_items:
+    - 'Mint-Y-Dark'

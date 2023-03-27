@@ -1,0 +1,5 @@
+---
+- name: Variant set to Dvorak
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: setxkbmap -variant dvorak

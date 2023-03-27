@@ -1,0 +1,5 @@
+---
+- name: PrintScr remapped to right SUPER
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "setxkbmap -option altwin:prtsc_rwin # Print screen remapped to right super"

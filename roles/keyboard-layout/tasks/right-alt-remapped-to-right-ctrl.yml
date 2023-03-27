@@ -1,0 +1,5 @@
+---
+- name: Right ALT remapped to Right CTRL
+  ansible.builtin.lineinfile:
+    path: ~/.profile
+    line: "setxkbmap -option ctrl:ralt_rctrl # Right alt becomes right control"
